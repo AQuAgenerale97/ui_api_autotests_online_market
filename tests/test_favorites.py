@@ -10,7 +10,7 @@ from online_market.models.pages.favorites_page import favorites_page
 @allure.label('owner', 'Глеб')
 def test_del_display_in_favorites_page(add_first_display_in_favorites):
     favorites_page.open()
-    favorites_page.del_product()
+    favorites_page.delete_product()
 
     favorites_page.should_clear_list()
 

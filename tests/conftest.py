@@ -1,6 +1,5 @@
 import os
 
-import allure
 import pytest
 from dotenv import load_dotenv
 
@@ -31,8 +30,9 @@ def setup_browser():
 
     login = os.getenv('SELENOID_LOGIN')
     password = os.getenv('SELENOID_PASS')
+    url = os.getenv('SELENOID_URL')
     driver = webdriver.Remote(
-        command_executor=f'https://{login}:{password}@selenoid.autotests.cloud/wd/hub',
+        command_executor=f'https://{login}:{password}@{url}/wd/hub',
         options=options
     )
 
@@ -51,28 +51,28 @@ def setup_browser():
     browser.quit()
 
 
-@pytest.fixture(scope='function')
+@pytest.fixture(scope='function', autouse=False)
 def open_first_display():
     displays_page.open()
     displays_page.open_first_display()
 
 
-@pytest.fixture(scope='function')
+@pytest.fixture(scope='function', autouse=False)
 def add_first_display_in_cart():
     displays_page.open()
     cart_menu.add_first_product()
 
-    cart_menu.should_product()
+    cart_menu.should_product_added_to_cart()
 
 
-@pytest.fixture(scope='function')
+@pytest.fixture(scope='function', autouse=False)
 def add_first_display_to_compare(open_first_display):
     display_page.add_display_to_compare()
 
     display_page.should_display_to_compare()
 
 
-@pytest.fixture(scope='function')
+@pytest.fixture(scope='function', autouse=False)
 def add_first_display_in_favorites(open_first_display):
     display_page.add_display_in_favorites()
 
