@@ -7,7 +7,7 @@ from online_market.models.pages.displays_page import displays_page
 @allure.suite('Категория "Дисплеи"')
 @allure.title(f'Проверка фильтра "Диагональ" значение "15.6"')
 @allure.severity('Major')
-@allure.label('owner', 'Глеб')
+@allure.label('owner', 'slinkovAA')
 def test_filter_display_diagonal_15_6_():
     displays_page.open()
     displays_page.click_filter_diagonal_15_6()

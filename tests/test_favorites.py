@@ -7,7 +7,7 @@ from online_market.models.pages.favorites_page import favorites_page
 @allure.suite('Список избранного')
 @allure.title(f'Удаление монитора из списка избранного')
 @allure.severity('Major')
-@allure.label('owner', 'Глеб')
+@allure.label('owner', 'slinkovAA')
 def test_del_display_in_favorites_page(add_first_display_in_favorites):
     favorites_page.open()
     favorites_page.delete_product()
@@ -19,7 +19,7 @@ def test_del_display_in_favorites_page(add_first_display_in_favorites):
 @allure.suite('Список избранного')
 @allure.title(f'Очистка списка избранного')
 @allure.severity('Major')
-@allure.label('owner', 'Глеб')
+@allure.label('owner', 'slinkovAA')
 def test_clear_list_in_favorites_page(add_first_display_in_favorites):
     favorites_page.open()
     favorites_page.clear_list()
