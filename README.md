@@ -3,7 +3,7 @@
 ![main page screenshot](pictures/online_market_main_page.png)
 
 ---
-### Список проверок, реализованных в web автотестах
+### Список проверок, реализованных в UI-автотестах
 1. Открытие первого монитора в списке.
 2. Проверка фильтра "Диагональ" значение "15.6".
 3. Добавление монитора в корзину.
@@ -23,10 +23,10 @@
 ---
 
 ### Запуск автотестов осуществляется с использованием Jenkins
-> [Ссылка на сборку в Jenkins](https://jenkins.autotests.cloud/job/online_market_project/)
+> [Ссылка на сборку в Jenkins](https://jenkins.autotests.cloud/job/Slinkov_online_market_ui_autotests/)
 
 #### Для запуска автотестов в Jenkins
-1. Открыть [задачу в Jenkins](https://jenkins.autotests.cloud/job/online_market_project/)
+1. Открыть [задачу в Jenkins](https://jenkins.autotests.cloud/job/Slinkov_online_market_ui_autotests/)
 
 ![jenkins job main page](pictures/Jenkins_job_main_page.png)
 
@@ -36,7 +36,7 @@
 
 ### Интеграция с Allure TestOps
 
-> [Тест-кейсы](https://allure.autotests.cloud/project/4236/test-cases/32320?treeId=0)
+> [Тест-кейсы](https://allure.autotests.cloud/project/4573/test-cases?treeId=0)
 
 ![allure_testops test_cases](pictures/allure_testops_test_cases.png)
 
