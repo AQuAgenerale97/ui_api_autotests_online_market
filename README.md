@@ -28,7 +28,7 @@
 #### Для запуска автотестов в Jenkins
 1. Открыть [задачу в Jenkins](https://jenkins.autotests.cloud/job/Slinkov_online_market_ui_autotests/)
 
-![jenkins job main page](pictures/Jenkins_job_main_page.png)
+![jenkins job main page](pictures/Jenkins_job_main_page.jpg)
 
 2. Нажать "**Build Now**".
 
@@ -38,7 +38,7 @@
 
 > [Тест-кейсы](https://allure.autotests.cloud/project/4573/test-cases?treeId=0)
 
-![allure_testops test_cases](pictures/allure_testops_test_cases.png)
+![allure_testops test_cases](pictures/allure_testops_test_cases.jpg)
 
 ---
 
@@ -49,7 +49,7 @@
 
 ### Уведомления в Телеграм
 
-![telegram_notification](pictures/tg_notification.png)
+![telegram_notification](pictures/tg_notification.jpg)
 
 ---
 
