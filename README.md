@@ -1,4 +1,4 @@
-# Проект по тестированию интернет-магазина <a target="_blank" href="https://www.online-market.by/">Online-Market</a>
+# Проект по UI-тестированию интернет-магазина <a target="_blank" href="[https://www.online-market.by/](https://www.online-market.by/keyboards)">Online-Market</a>
 
 ![main page screenshot](pictures/online_market_main_page.png)
 
