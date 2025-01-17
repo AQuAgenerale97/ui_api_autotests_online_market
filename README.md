@@ -45,7 +45,7 @@
 #### Интеграция с Jira
 > [Ссылка на задачу в jira](https://jira.autotests.cloud/browse/HOMEWORK-1386)
 
-![This is an image](pictures/jira_intgr.png)
+![This is an image](pictures/jira_intgr.jpg)
 
 ---
 
