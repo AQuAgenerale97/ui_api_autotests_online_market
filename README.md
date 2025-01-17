@@ -55,4 +55,4 @@
 
 ### Прохождение автотеста
 
-![autotest](pictures/del.mp4)
+![autotest](pictures/del.gif)
