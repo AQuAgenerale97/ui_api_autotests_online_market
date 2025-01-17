@@ -1,6 +1,6 @@
 # Проект по UI-тестированию интернет-магазина <a target="_blank" href="https://www.online-market.by/keyboards">Online-Market</a>
 
-![main page screenshot](pictures/online_market_main_page.png)
+![main page screenshot](pictures/main_page_market.jpg)
 
 ---
 ### Список проверок, реализованных в UI-автотестах
@@ -55,4 +55,4 @@
 
 ### Прохождение автотеста
 
-![autotest](pictures/del_display_in_compare_page.gif)
+![autotest](pictures/del.mp4)
