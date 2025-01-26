@@ -13,3 +13,16 @@ def test_filter_display_diagonal_15_6_():
     displays_page.click_filter_diagonal_15_6()
 
     displays_page.should_filter_diagonal_15_6()
+
+
+@allure.parent_suite('UI Tests')
+@allure.suite('Категория "Дисплеи"')
+@allure.title(f'Проверка множественно выбора фильтров "Диагональ" со значениями "15.6" и "16.0"')
+@allure.severity('Major')
+@allure.label('owner', 'slinkovAA')
+def test_filter_display_diagonal_15_6_and_16_0():
+    displays_page.open()
+    displays_page.click_filter_diagonal_15_6()
+    displays_page.click_filter_diagonal_16_0()
+
+    displays_page.should_filter_diagonal_15_6_and_16_0()

@@ -16,10 +16,25 @@ class DisplaysPage:
                                                           ).element('[type="checkbox"]').click()
         return self
 
+    def click_filter_diagonal_16_0(self):
+        with (allure.step("Проставляем значение фильтра 'Диагональ' как '16.0'")):
+            diagonal = browser.element('#collapse-Diagonal')
+            diagonal.all('.block-element').element_by_its('label', have.text('16')
+                                                          ).element('[type="checkbox"]').click()
+        return self
+
     def should_filter_diagonal_15_6(self):
         with (allure.step("Проверяем что фильтр 'Диагональ' как '15.6' успешно применился")):
             monitor = browser.element('#productsList')
             monitor.all('.item').first.should(have.text('15.6'))
+        return self
+
+    def should_filter_diagonal_15_6_and_16_0(self):
+        with (allure.step("Проверяем что фильтр 'Диагональ' как '16.0' успешно применился")):
+            monitor = browser.element('#productsList')
+            monitor.all('.item').first.should(have.text('15.6'))
+            monitor = browser.element('#productsList')
+            monitor.all('.item').first.should(have.text('16'))
         return self
 
     def open_first_display(self):
